@@ -1,7 +1,10 @@
 cmake_minimum_required(VERSION 3.0)
 
 set(CMAKE_INSTALL_PREFIX "${CMAKE_CURRENT_BINARY_DIR}/install" CACHE PATH "Path where to install binaries")
-
+set(Boost_USE_STATIC_LIBS ON)
+set(Boost_USE_MULTITHREADED ON)
+#设置boost根目录
+set(BOOST_ROOT "D:/boost/boost_1_58_0")
 project(caffe-windows-dependencies)
 
 include (ExternalProject)
@@ -102,7 +105,8 @@ ExternalProject_Add ( snappy
 set(SNAPPY_ROOT_DIR ${CMAKE_INSTALL_PREFIX}/snappy)
 
 add_subdirectory(opencv)
-set(OpenCV_DIR ${CMAKE_INSTALL_ PREFIX}/OpenCV)
+#原文多了一个空格
+set(OpenCV_DIR ${CMAKE_INSTALL_PREFIX}/OpenCV)
 
 add_subdirectory(hdf5)
 
