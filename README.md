@@ -21,7 +21,7 @@ Windows binaries for these dependencies are widely available. Please note that b
 The project is setup via git submodules pointing to either the original code repository on github or a fork of the project so that a CMake-based build is available.
 
 When this project is built it will generate binaries and includes (via CMake install) and a cmake cache file that cane be used so configure the CMake based build of Caffe. Here is what an initial setup would look like
-
+##打开“VS2013 x64 兼容工具命令提示”输入命令
     cmd> md caffe
     cmd> cd caffe
     cmd> git clone https://github.com/willyd/caffe.git caffe
@@ -36,7 +36,7 @@ When this project is built it will generate binaries and includes (via CMake ins
     cmd> cd ..
     cmd> md build-caffe
     cmd> cd build-caffe
-    cmd> cmake  -G "<your generator>" -C ..\build-caffe-windows-dependencies\install\caffe-cache-init.cmake ..\caffe
+    cmd> cmake  -G "Visual Studio 12 Win64" -C ..\build-caffe-windows-dependencies\install\caffe-cache-init.cmake ..\caffe
     cmd> cmake --build . --config Debug
     cmd> cmake --build . --config Release
     
