@@ -29,7 +29,7 @@ When this project is built it will generate binaries and includes (via CMake ins
     cmd> git clone --recursive https://github.com/willyd/caffe-windows-dependencies.git caffe-windows-dependencies
     cmd> md build-caffe-windows-dependencies
     cmd> cd build-caffe-windows-dependencies
-    cmd> cmake -G "<your generator>" ..\caffe-windows-dependencies
+    cmd> cmake -G "Visual Studio 12 Win64" ..\caffe-windows-dependencies
     # configure your environment, set path to boost, set path to opencv, etc...
     cmd> cmake --build . --config Debug
     cmd> cmake --build . --config Release
