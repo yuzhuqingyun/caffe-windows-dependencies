@@ -1,6 +1,6 @@
 set(extproject_name hdf5)
 set(extproject_FILE "hdf5-1.8.15-patch1.zip")
-set(extproject_URL "https://www.hdfgroup.org/ftp/HDF5/current/src/${extproject_FILE}")
+set(extproject_URL "https://www.hdfgroup.org/ftp/HDF5/releases/hdf5-1.8.15-patch1/src/${extproject_FILE}")
 
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/${extproject_FILE}") 
 	set(extproject_URL "${CMAKE_CURRENT_SOURCE_DIR}/${extproject_FILE}")
